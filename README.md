@@ -2,13 +2,13 @@
 
 By Rhey Mar De Vera
 
-### Project Overview
-This project aims to identify different customer groups based on their purchasing behavior to help this company create marketing strategies to improve customer retention and increase revenue. This project will also look into the general analysis of the store's business, acquiring insights such as sales trends, customer trends, popular products, and performance over time. 
+## Project Overview
+This project aims to identify different customer groups based on their purchasing behavior to help this company create marketing strategies to improve customer retention and increase revenue. This project will also conduct a general analysis of the store's business, providing insights into sales trends, customer behavior, popular products, and performance over time. All visualizations and code are available in ```uci_retail_segmentation.ipynb```.
 
-Libraries used: ```pandas```, ```numpy```, ```plotly```, ```matplotlib```, ```seaborn```
+Libraries used: ```pandas```, ```numpy```, ```datetime```, ```plotly```, ```matplotlib```, ```seaborn```
 
-### Data
-The dataset I will be using is a transactional data set containing transactions occurring between  2009-2011, for a UK-based online retail store. The link for the original data set can be accessed [here](https://archive.ics.uci.edu/dataset/352/online+retail). 
+## Data
+The dataset I will be using is a transactional dataset containing transactions occurring between  2009-2011, for a UK-based online retail store. The link for the original data set can be accessed [here](https://archive.ics.uci.edu/dataset/352/online+retail). 
 
 ```online.csv``` in this repo is a compressed version of the data from [Kaggle](https://www.kaggle.com/datasets/mashlyn/online-retail-ii-uci), but I used the original data from UCI, which was too big to upload to GitHub.
 
@@ -22,14 +22,31 @@ The data set consists of 8 variables:
 - **CustomerID**: Unique 5-digit IDs uniquely assigned to each customer
 - **Country**: The name of the country where the customer purchased an item
 
-### Key Steps
-1. Data Cleaning and Preparation
+## Key Steps
 
-- Inspected the data properties, looking for any null or duplicate values and removing them promptly. Also removed negative and zero values, since this project focuses on customer purchase behavior. 
+---
 
-2. Sales Analysis
+### 1. Data Cleaning and Preparation
 
-- Use cleaned transaction data to create visualizations for sales insights, including item sales, customer revenue, country sales, etc.
+Inspected the data properties, looking for any null or duplicate values, and removed them promptly. Also removed negative and zero values, since this project focuses on customer purchase behavior. 
 
-3. 
+### 2. Sales Analysis
 
+Used cleaned transaction data to create visualizations for sales insights, including item sales, customer revenue, and country sales, among others.
+
+### 3. Cohort Analysis
+
+Developed time and average quantity cohort heatmaps, showing customer retention over time. This is important to visualize and understand customer behavior over time, showing where engagement or activity drops/ peaks.
+
+### 4. RFM Analysis
+
+Segmented customers using RFM (Recency, Frequency, Monetary) analysis, putting them into a high-value, mid-value, or low-value tier. This segment customers into different tiers based on their activity and purchasing power, giving us insight into the different groups and how the business can campaign to improve sales or retention in each group.
+
+## Data Driven Recommendations
+From this analysis, we learn a lot about this UK retailer's business and sales. Here are some recommendations I'm able to make based on the insights gained from this project:
+
+- **Country Marketing**: We saw that the UK has the leading amount of purchases (~£14M), with other countries in the dataset not even reaching a revenue of £1M. This is valuable for the marketing team if they ever want to expand influence in other countries, especially countries like France and Denmark, with low purchase value (regional expansion or diversification).
+- **Seasonal Trends**: From the time series graph, we can see that sales peak around the holiday season, then drop sharply once December/January hits. The retailer can focus on increasing inventory, hiring staff, and increasing deals/ marketing to maximize profit in this time range. Once it drops, they can adjust staff and inventory accordingly, with discounts to try and keep sales higher once the holiday season is done. 
+- **Implement Re-engagement Strategies**: As seen from the cohort analysis, most customers churn within the first few months of their purchase and have a weak retention rate. Targeted marketing campaigns towards low-value and mid-value customers could help reduce this churn and keep retention up. This campaign would include strategies such as limited-time promotions, reminder emails, reactivation discounts, strong loyalty programs, and more.
+- **Retaining High-Value Customers**: These customers generate about 90% of the business's revenue, and should be focused on through loyalty programs, exclusive discounts, and more. For example, customer 18102 has spent over £580k on the site, contributing a lot to the retailer's revenue.
+- **Using RFM Metrics to identify high-risk customers**: For future work, I could use this dataset to create a model to find customers most at risk of churning to prioritize them for retention efforts.
