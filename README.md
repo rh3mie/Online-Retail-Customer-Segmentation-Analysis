@@ -3,7 +3,9 @@
 By Rhey Mar De Vera
 
 ## Project Overview
-This project aims to identify different customer groups based on their purchasing behavior to help this company create marketing strategies to improve customer retention and increase revenue. This project will also conduct a general analysis of the store's business, providing insights into sales trends, customer behavior, popular products, and performance over time. All visualizations and code are available in ```uci_retail_segmentation.ipynb```.
+This project aims to identify different customer groups based on their purchasing behavior to help this company create marketing strategies to improve customer retention and increase revenue. This project will also conduct a general analysis of the store's business, providing insights into sales trends, customer behavior, popular products, and performance over time. All code is available in ```uci_retail_segmentation.ipynb```.
+
+To view visualizations, they are available in the ```visualizations``` folder. Another option is to view this notebook in [nbviewer](https://nbviewer.org/), where the interactive plotly graphs can be seen.
 
 Libraries used: ```pandas```, ```numpy```, ```datetime```, ```plotly```, ```matplotlib```, ```seaborn```
 
