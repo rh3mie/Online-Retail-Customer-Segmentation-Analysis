@@ -7,7 +7,7 @@ This project aims to identify different customer groups based on their purchasin
 
 To view visualizations, they are available in the ```visualizations``` folder. Another option is to view this notebook in [nbviewer](https://nbviewer.org/), where the interactive plotly graphs can be seen.
 
-Libraries used: ```pandas```, ```numpy```, ```datetime```, ```plotly```, ```matplotlib```, ```seaborn```
+Libraries used: ```pandas```, ```numpy```, ```datetime```, ```plotly```, ```matplotlib```, ```seaborn```, ```sklearn```
 
 ## Data
 The dataset I will be using is a transactional dataset containing transactions occurring between  2009-2011, for a UK-based online retail store. The link for the original data set can be accessed [here](https://archive.ics.uci.edu/dataset/352/online+retail). 
@@ -42,7 +42,10 @@ Developed time and average quantity cohort heatmaps, showing customer retention 
 
 ### 4. RFM Analysis
 
-Segmented customers using RFM (Recency, Frequency, Monetary) analysis, putting them into a high-value, mid-value, or low-value tier. This segment customers into different tiers based on their activity and purchasing power, giving us insight into the different groups and how the business can campaign to improve sales or retention in each group.
+Segmented customers using RFM (Recency, Frequency, Monetary) analysis, putting them into a high-value, mid-value, or low-value tier. This segment categorizes customers into different tiers based on their activity and purchasing power, providing insight into the various groups and how the business can effectively campaign to improve sales or retention in each group. This also sets up the data for k-means clustering.
+
+### 5. K-Means Clustering
+Used clustering with K-means to identify customer behavioural segments and revealed distinct groups of customers, including high-value loyal buyers, occasional/at-risk customers, new/low spend customers, and inactive/ churned users. We can use this segmentation to create actionable insights for targeted marketing and customer retention strategies.
 
 ## Data Driven Recommendations
 From this analysis, we learn a lot about this UK retailer's business and sales. Here are some recommendations I'm able to make based on the insights gained from this project:
@@ -51,4 +54,4 @@ From this analysis, we learn a lot about this UK retailer's business and sales. 
 - **Seasonal Trends**: From the time series graph, we can see that sales peak around the holiday season, then drop sharply once December/January hits. The retailer can focus on increasing inventory, hiring staff, and increasing deals/ marketing to maximize profit in this time range. Once it drops, they can adjust staff and inventory accordingly, with discounts to try and keep sales higher once the holiday season is done. 
 - **Implement Re-engagement Strategies**: As seen from the cohort analysis, most customers churn within the first few months of their purchase and have a weak retention rate. Targeted marketing campaigns towards low-value and mid-value customers could help reduce this churn and keep retention up. This campaign would include strategies such as limited-time promotions, reminder emails, reactivation discounts, strong loyalty programs, and more.
 - **Retaining High-Value Customers**: These customers generate about 90% of the business's revenue, and should be focused on through loyalty programs, exclusive discounts, and more. For example, customer 18102 has spent over £580k on the site, contributing a lot to the retailer's revenue.
-- **Using RFM Metrics to identify high-risk customers**: For future work, I could use this dataset to create a model to find customers most at risk of churning to prioritize them for retention efforts.
+- **Cluster-Based Personalized Marketing**: Use the k-means customer segments to deliver personalized marketing campaigns based on. For example, occasional/at-risk customers (cluster 0) can receive limited-time discounts, reminder emails, and other perks to encourage them to keep buying and stay loyal to the retailer. This can improve retention and overall sales by encouraging buyers to stay loyal.
