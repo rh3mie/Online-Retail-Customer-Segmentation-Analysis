@@ -1,6 +1,6 @@
-# Online-Retail-Customer-Segmentation-Analysis
+# Online Retail Customer Segmentation Analysis
 
-By Rhey Mar De Vera
+*By Rhey Mar De Vera*
 
 ## Project Overview
 This project aims to identify different customer groups based on their purchasing behavior to help this company create marketing strategies to improve customer retention and increase revenue. This project will also conduct a general analysis of the store's business, providing insights into sales trends, customer behavior, popular products, and performance over time. All code is available in ```uci_retail_segmentation.ipynb```.
