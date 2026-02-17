@@ -46,12 +46,17 @@ Used cleaned transaction data to create visualizations for sales insights, inclu
 
 Developed time and average quantity cohort heatmaps, showing customer retention over time. This is important to visualize and understand customer behavior over time, showing where engagement or activity drops/ peaks.
 
+<img width="1157" height="701" alt="retention_rates_cohort" src="https://github.com/user-attachments/assets/3002da78-91b0-4cc4-b758-28db3945be72" />
+
+
 ### 4. RFM Analysis
 
 Segmented customers using RFM (Recency, Frequency, Monetary) analysis, putting them into a high-value, mid-value, or low-value tier. This segment categorizes customers into different tiers based on their activity and purchasing power, providing insight into the various groups and how the business can effectively campaign to improve sales or retention in each group. This also sets up the data for k-means clustering.
 
 ### 5. K-Means Clustering
 Used clustering with K-means to identify customer behavioural segments and revealed distinct groups of customers, including high-value loyal buyers, occasional/at-risk customers, new/low spend customers, and inactive/ churned users. We can use this segmentation to create actionable insights for targeted marketing and customer retention strategies. Used evaluation methods (Silhouette Score, PCA, and Centroid Heatmaps) to confirm suitability for real-world use.
+
+<img width="562" height="455" alt="k_means_clusters" src="https://github.com/user-attachments/assets/e26dc4e6-c81d-4909-93cb-c604597cee8d" />
 
 ## Data Driven Recommendations
 From this analysis, we learn a lot about this UK retailer's business and sales. Here are some recommendations I'm able to make based on the insights gained from this project:
