@@ -42,19 +42,19 @@ Inspected the data properties, looking for any null or duplicate values, and rem
 
 Used cleaned transaction data to create visualizations for sales insights, including item sales, customer revenue, and country sales, among others.
 
-<img width="1072" height="881" alt="image" src="https://github.com/user-attachments/assets/8840ea96-2bfe-456b-9dbc-dd0d3060516f" />
+<img width="559" height="452" alt="image" src="https://github.com/user-attachments/assets/8840ea96-2bfe-456b-9dbc-dd0d3060516f" />
 
 ### 3. Cohort Analysis
 
 Developed time and average quantity cohort heatmaps, showing customer retention over time. This is important to visualize and understand customer behavior over time, showing where engagement or activity drops/ peaks.
 
-<img width="1156" height="692" alt="image" src="https://github.com/user-attachments/assets/28d75e4f-3597-41c0-b2de-ff06fbbc57f3" />
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/28d75e4f-3597-41c0-b2de-ff06fbbc57f3" />
 
 ### 4. RFM Analysis
 
 Segmented customers using RFM (Recency, Frequency, Monetary) analysis, putting them into a high-value, mid-value, or low-value tier. This segment categorizes customers into different tiers based on their activity and purchasing power, providing insight into the various groups and how the business can effectively campaign to improve sales or retention in each group. This also sets up the data for k-means clustering.
 
-<img width="1081" height="891" alt="image" src="https://github.com/user-attachments/assets/d80395b2-74b9-46e4-aece-9d9ff94f7424" />
+<img width="559" height="452" alt="image" src="https://github.com/user-attachments/assets/d80395b2-74b9-46e4-aece-9d9ff94f7424" />
 
 ### 5. K-Means Clustering
 Used clustering with K-means to identify customer behavioural segments and revealed distinct groups of customers, including high-value loyal buyers, occasional/at-risk customers, new/low spend customers, and inactive/ churned users. We can use this segmentation to create actionable insights for targeted marketing and customer retention strategies. Used evaluation methods (Silhouette Score, PCA, and Centroid Heatmaps) to confirm suitability for real-world use.
