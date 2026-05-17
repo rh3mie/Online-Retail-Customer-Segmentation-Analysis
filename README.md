@@ -1,8 +1,11 @@
-# Online Retail Customer Segmentation Analysis
+# Customer Segmentation & Retention Analysis
 
 *By Rhey Mar De Vera*
 
-## Project Overview
+## Business Problem
+Online retailers accumulate millions of transactions, creating a vast pool of customer data they don't take fully advantage of. They may apply flat discounts and run generic marketing campaigns without taking into consideration customer purchasing behavior, which is where customer segmentation takes into play. Without customer segmentation, businesses can't identify their most valuable customers, which customers are at risk of churning, or how to allocate marketing spend effectively across customer groups.
+
+## Solution/ Project Overview
 This project aims to identify different customer groups based on their purchasing behavior to help this company create marketing strategies to improve customer retention and increase revenue. This project will also conduct a general analysis of the store's business, providing insights into sales trends, customer behavior, popular products, and performance over time. All code is available in ```uci_retail_segmentation.ipynb```.
 
 To view visualizations, they are available in the ```visualizations``` folder. Another option is to view this notebook in [nbviewer](https://nbviewer.org/), where the interactive plotly graphs can be seen.
